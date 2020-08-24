@@ -1,0 +1,105 @@
+/* material icon */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+body{
+    font-size: 0.8rem !important;
+}
+
+.header .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.content{
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.content .image .header{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background: #fcfcfc;    
+    padding: 1rem 5rem;
+    margin: 2rem 5rem;
+}
+
+.fc-green{
+    color: green;
+}
+
+.content .image .header span{
+    display: block;
+    font-size: 14px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+@media (max-width: 540px){
+    .content .image .header{
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        background: #fcfcfc;    
+        padding: 1rem 3rem;
+        margin: 0rem 3rem;
+    }
+}
+
+@media (max-width: 415px){
+    .content .image .header{
+        position: absolute;
+        top: 30%;
+        left: 12%;
+        background: #fcfcfc;    
+        padding: 1rem 3rem;
+        margin: 0rem 3rem;
+    }
+}
+

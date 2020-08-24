@@ -1,0 +1,32 @@
+<div class="">
+  Income 
+  <span class="float-right">
+    {{ incomeList.length }} items
+  </span>
+</div>
+<hr>
+<table class="table table-striped table-sm text-center">
+  <thead class="table-success">
+    <tr>
+      <th width="20%">Sr. No.</th>
+      <th width="40%">Title</th>
+      <th width="30%">Money</th>
+      <th width="30%">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of incomeList; let i=index">
+      <td>{{ item.id }}.</td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.amount }}</td>
+      <td>
+        <span class="cursor-pointer pr-1" (click)="onRemoveIncome(i)"> 
+          <i class="fas fa-minus-circle"></i>
+        </span>
+        <span class="cursor-pointer pl-1" (click)="onEditIncome(i)">
+          <i class="far fa-edit"></i>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
